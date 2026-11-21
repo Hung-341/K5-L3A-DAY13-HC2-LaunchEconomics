@@ -18,6 +18,11 @@
 #
 # Đánh đổi đã chấp nhận: MDE 6 điểm thay vì 5; power khoảng 0,64 nếu tác động thực là 5 điểm.
 #
+# Thời lượng: phạm vi noi_dia + hang_nang ≈ 1.227 yêu cầu/ngày (1.500 × 982/1.200) → ≈ 215 yêu cầu/nhân viên/tuần;
+#   cần 299 yêu cầu/nhân viên ở bước 50% → 299 ÷ 215 × 7 ≈ 9,7 ngày, nên bước 50% chạy 2 tuần (≈ 430/người).
+#   Tổng 4 tuần rollout + 7 ngày theo dõi mở lại = 35 ngày → bắt đầu chậm nhất 2026-12-01 để kịp 2027-01-05;
+#   bắt đầu muộn hơn thì lùi ngày quyết định đúng số ngày trễ.
+#
 # Tỉ lệ mo_lai_trong_7_ngay: 4,25% toàn mẫu, 3,97% trong scope; chênh lệch tối đa +2 điểm so với đối chứng và trần 6%.
 
 pilot:
@@ -27,7 +32,7 @@ pilot:
     unit: "staff"                     # request | staff | depot
     control_share: 0.5
     randomized: true
-  rollout: [0.10, 0.25, 0.50]     # mỗi bước một tuần
+  rollout: [0.10, 0.25, 0.50]     # 10% và 25% mỗi bước 1 tuần; 50% chạy 2 tuần (cần ~9,7 ngày để đạt 299 yêu cầu/nhân viên)
   primary_metric:
     name: dong_trong_24h_khong_mo_lai_7_ngay
     baseline: 0.70
@@ -47,5 +52,5 @@ pilot:
     - "NẾU tỉ lệ bỏ qua gợi ý vượt 40% TRONG 1 tuần THÌ Trưởng nhóm CSKH phỏng vấn 5 nhân viên trong 3 ngày KHÔNG THÌ không được chuyển bước rollout"
   interim_looks: "chỉ kiểm tra chỉ số an toàn"
   rollback: "Giám đốc vận hành bấm cờ tắt, hiệu lực trong 30 phút; khách được phục vụ bằng luồng nhân viên tự làm."                   # ai bấm, mất bao lâu, khách được phục vụ bằng gì
-  decision_date: "2027-01-05"
+  decision_date: "2027-01-05"     # bắt đầu chậm nhất 2026-12-01: 4 tuần rollout + 7 ngày theo dõi mở lại
   simulated_inputs: ["Dữ liệu CSV của lab", "Baseline 0,70; MDE 0,06; alpha 0,05; power 0,80; ICC 0,02", "40 nhân viên; 12 depot; 45.000 yêu cầu/tháng; rollout 0,10/0,25/0,50", "A3 cost ratios 0,22x; 0,69x; 1,88x; 0,85x", "Mở lại 4,25% toàn mẫu và 3,97% trong scope; ngưỡng an toàn +2 điểm và 6%", "Stop thresholds: 1 ca hoàn trùng/3 ngày; chi phí 8.000 đ/2 tuần; bỏ qua 40%/tuần; 2 lần chạy; phỏng vấn 5 người/3 ngày; rollback 30 phút", "Phút xem lại/làm lại từ cột *_simulated"]         # liệt kê mọi con số giả lập đã dùng
