@@ -27,6 +27,7 @@ Nhóm đánh giá chi phí trên mỗi yêu cầu hoàn phí thành công, mức
 - Chỉ số trong đợt chạy thử: 82,83% yêu cầu đóng trong 24 giờ và không mở lại trong 7 ngày (994/1.200); tỉ lệ sửa/bỏ gợi ý 27,12% (48/177); tỉ lệ mở lại 4,25% (51/1.200).
 - Pilot: 20 nhân viên mỗi nhánh, MDE 6 điểm, 859 yêu cầu mỗi nhánh (DE 6,96). Nếu tác động thật là 5 điểm, power chỉ khoảng 0,64.
 - Đề xuất: Go có điều kiện. Điều kiện và người phụ trách ghi trong `ho_so_launch_v0.md`.
+- Duyệt chéo Gate 2a: nhóm Alone chấm HC2 25/30, Go có điều kiện; HC2 đã kéo bước 50% lên 2 tuần (≈ 430 yêu cầu/người ≥ 299) và ghi ngày bắt đầu chậm nhất 2026-12-01 để 2027-01-05 đủ 7 ngày theo dõi mở lại. HC2 chấm Alone 26/30 (8 · 9 · 9), Go có điều kiện; phiếu trong `phieu_cham.md`.
 
 ## 5. Khó khăn và cách xử lý
 

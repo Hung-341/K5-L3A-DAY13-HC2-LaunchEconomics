@@ -5,7 +5,7 @@
 - Tên nhóm: HC2
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-HC2-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt: https://github.com/Hung-341/K5-L3A-DAY13-HC2-LaunchEconomics · `main` · commit chốt:
+- URL repo, nhánh nộp, commit chốt: https://github.com/Hung-341/K5-L3A-DAY13-HC2-LaunchEconomics · `main` · commit chốt: `70a6271`
 
 ## Thành viên
 
