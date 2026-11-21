@@ -30,7 +30,7 @@
   - B1/B2: xếp hạng số ca làm lại (+51,8%) > tỉ lệ xem lại (+40,7%) > lương (+23,1%) [simulated]; token ×2 + xem lại ×2 = 6.543 đ (+46,3%).
   - B3: giới hạn 2 lần rẻ nhất cho cả hệ thống (6.901.220 đ) [simulated]; giới hạn 1 lần cho cps thấp nhất (4.111 đ).
   - B4: xem lại 100% = 11.743 đ = 0,98× (làm lại 9 phút), 12.415 đ = 1,03× (làm lại 15,3 phút) [simulated].
-- Commit: (điền mã commit sau khi push)
+- Commit: `fe35a1b` — feat(lab13): hoan thanh nhiem vu mo hinh chi phi, do nhay va bao cao ca nhan Dang Duc Cuong
 
 ## 5. Công cụ AI đã dùng
 
