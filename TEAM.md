@@ -44,7 +44,7 @@ Sao chép mục dưới đây cho từng thành viên.
 - Nhiệm vụ C/E1: tiếp nhận phần việc của Khôi; hoàn thiện E1 và gắn nhãn độc lập lần 2 ở CP3. Hai bộ nhãn độc lập cần được lập riêng trước khi so.
 - Nhiệm vụ D: tính cỡ mẫu, chọn cách chia pilot và hoàn thiện `report/team/pilot_plan.yaml`.
 - Nhiệm vụ E2–E3: điền risk register và các phần hồ sơ được giao trong `report/team/chi_so.md` và `report/team/ho_so_launch_v0.md`.
-- Người gắn nhãn 2 ở CP3: gắn nhãn 20 ca độc lập trước khi trao đổi với Người gắn nhãn 1.
+- Người gắn nhãn 2 ở CP3: gắn nhãn 20 ca độc lập trước khi so với bộ nhãn còn lại.
 
 ### Đóng góp cụ thể
 
