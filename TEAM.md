@@ -47,13 +47,13 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Đóng góp cụ thể
 
-- Tính năm trường hợp cỡ mẫu D1, ghi đánh đổi khi chọn MDE 6 điểm và trả lời năm câu D2.
+- Viết phần CP4 trong `src/lab13.py` tính năm trường hợp cỡ mẫu D1, power 0,64 và tỉ lệ mở lại; ghi đánh đổi khi chọn MDE 6 điểm và trả lời năm câu D2.
 - Đề xuất ba luật dừng cho an toàn, chi phí và mức sử dụng; ghi rollback và ngày quyết định.
-- Điền hai rủi ro kinh tế theo số liệu mẫu trong hướng dẫn; tích hợp pilot và rủi ro vào hồ sơ launch.
+- Điền hai rủi ro kinh tế theo bảng độ nhạy B1; tích hợp số A–B, pilot và rủi ro vào hồ sơ launch.
 
 ### Bằng chứng
 
-- `report/team/pilot_plan.yaml`: D1/D2 và ba stop rule; phần E2 trong `report/team/chi_so.md`; mục 6–7 và đề xuất trong `report/team/ho_so_launch_v0.md`.
+- Phần CP4 trong `src/lab13.py`; `report/team/pilot_plan.yaml`: D1/D2 và ba stop rule; phần E2 trong `report/team/chi_so.md`; mục 1–3, 6–7 và đề xuất trong `report/team/ho_so_launch_v0.md`.
 
 ## DangDucCuong-2A202603680
 

@@ -265,6 +265,32 @@ if __name__ == '__main__':
               f' · hoà vốn khi xem lại ≤ {b4["phut_xem_hoa_von"]:.1f} phút')
     print(f'  phút làm lại thực tế/ca lam_lai: tb {tb_lam_lai.mean():.1f}, trung vị {tb_lam_lai.median():.1f}')
 
-    # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
-    #   from statsmodels.stats.proportion import proportion_effectsize
-    #   from statsmodels.stats.power import NormalIndPower
+    # ----- CP4 · Nhiệm vụ D: cỡ mẫu -----
+    from statistics import NormalDist
+    from statsmodels.stats.proportion import proportion_effectsize
+    from statsmodels.stats.power import NormalIndPower
+
+    def co_mau(p1, p2, alpha=0.05, power=0.8):
+        za, zb = NormalDist().inv_cdf(1 - alpha / 2), NormalDist().inv_cdf(power)
+        pb = (p1 + p2) / 2
+        return math.ceil((za * math.sqrt(2 * pb * (1 - pb))
+                          + zb * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2 / (p2 - p1) ** 2)
+
+    ICC = 0.02
+    de = lambda m: 1 + (m - 1) * ICC
+    n5, n6 = co_mau(0.70, 0.75), co_mau(0.70, 0.76)
+    print('\n== D1 · Cỡ mẫu (baseline 0,70; alpha 0,05; power 0,8; ICC 0,02) ==')
+    print(f'a) Chia theo yêu cầu, +5 điểm: {n5} yêu cầu mỗi nhóm')
+    n_b = math.ceil(n5 * de(75))
+    print(f'b) Theo nhân viên, m = 75: DE = {de(75):.2f}; n = {n_b} mỗi nhóm → {math.ceil(n_b / 75)} người mỗi nhóm'
+          f' (tổng {2 * math.ceil(n_b / 75)} > 40)')
+    print(f'c) 20 nhân viên mỗi nhóm: hiệu dụng tối đa 20 / ICC = {20 / ICC:.0f} < {n5}: không đạt')
+    print(f'd) 6 depot mỗi nhóm: hiệu dụng tối đa 6 / ICC = {6 / ICC:.0f}')
+    m6 = next(m for m in range(1, 10_000) if 20 * m / de(m) >= n6)
+    power5 = NormalIndPower().power(abs(proportion_effectsize(0.75, 0.70)), nobs1=n6, alpha=0.05)
+    print(f'e) +6 điểm: {n6} mỗi nhóm; 20 nhân viên mỗi nhóm cần m ≥ {m6} yêu cầu/người (DE {de(m6):.2f});'
+          f' power nếu tác động thật là 5 điểm: {power5:.2f}')
+
+    pham_vi = reqs[reqs.loai.isin(PHAM_VI_PILOT)]
+    print(f'Tỉ lệ mở lại 7 ngày: {reqs.mo_lai_trong_7_ngay.mean():.2%} ({reqs.mo_lai_trong_7_ngay.sum()}/{len(reqs)})'
+          f' toàn mẫu; {pham_vi.mo_lai_trong_7_ngay.mean():.2%} trong noi_dia + hang_nang')
