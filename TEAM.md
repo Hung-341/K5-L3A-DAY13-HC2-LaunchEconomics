@@ -12,8 +12,8 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Đặng Đức Cương | 2A202603680 |  |  | Người viết code, kiêm người kiểm số (A–B) |
-|   2 | Nguyễn Trần Anh Khôi | 2A202603422 |  |  | Người gắn nhãn 1 (C), phụ trách E1 |
-|   3 | Lê Gia Hưng | 2A202603706 |  | Hung-341 | Người gắn nhãn 2, kiêm giữ hồ sơ (C, D, E2–E3) |
+|   2 | Lê Gia Hưng | 2A202603706 |  | Hung-341 | Người gắn nhãn 2, kiêm giữ hồ sơ (C, D, E1–E3) |
+|   3 |        |      |       |        |         |
 |   4 |        |      |       |        |         |
 
 Bốn vai của lab:
@@ -41,6 +41,7 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Phần việc phụ trách
 
+- Nhiệm vụ C/E1: tiếp nhận phần việc của Khôi; hoàn thiện E1 và gắn nhãn độc lập lần 2 ở CP3. Hai bộ nhãn độc lập cần được lập riêng trước khi so.
 - Nhiệm vụ D: tính cỡ mẫu, chọn cách chia pilot và hoàn thiện `report/team/pilot_plan.yaml`.
 - Nhiệm vụ E2–E3: điền risk register và các phần hồ sơ được giao trong `report/team/chi_so.md` và `report/team/ho_so_launch_v0.md`.
 - Người gắn nhãn 2 ở CP3: gắn nhãn 20 ca độc lập trước khi trao đổi với Người gắn nhãn 1.
@@ -48,6 +49,7 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Đóng góp cụ thể
 
 - Viết phần CP4 trong `src/lab13.py` tính năm trường hợp cỡ mẫu D1, power 0,64 và tỉ lệ mở lại; ghi đánh đổi khi chọn MDE 6 điểm và trả lời năm câu D2.
+- Tính E1 trên 1.200 yêu cầu: chỉ số chính 82,83% (994/1.200), tỉ lệ sửa/bỏ gợi ý 27,12% (48/177), tỉ lệ mở lại 4,25% (51/1.200); lập danh sách event và kiểm tra chéo event với chỉ số.
 - Đề xuất ba luật dừng cho an toàn, chi phí và mức sử dụng; ghi rollback và ngày quyết định.
 - Điền hai rủi ro kinh tế theo bảng độ nhạy B1; tích hợp số A–B, pilot và rủi ro vào hồ sơ launch.
 

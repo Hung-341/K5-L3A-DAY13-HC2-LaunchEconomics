@@ -4,11 +4,11 @@
 
 | Loại | Chỉ số | Công thức | Tính thử trên 1.200 yêu cầu |
 | --- | --- | --- | --- |
-| Chính (kết quả) | % yêu cầu đóng trong 24 giờ và không mở lại trong 7 ngày | `dong_trong_24h` bằng 1 và `mo_lai_trong_7_ngay` bằng 0, chia tổng số yêu cầu | ... |
-| Dùng | Tỉ lệ bỏ qua gợi ý | `quyet_dinh_xem_lai` là `sua` hoặc `bo`, chia số yêu cầu được xem lại | ... |
-| An toàn | Tỉ lệ lỗi lọt đến khách | `mo_lai_trong_7_ngay` bằng 1, chia tổng số yêu cầu | ... |
-| Dùng | Nhóm tự đề xuất: ... | ... | Không cần tính |
-| An toàn | Nhóm tự đề xuất: ... | ... | Không cần tính |
+| Chính (kết quả) | % yêu cầu đóng trong 24 giờ và không mở lại trong 7 ngày | `dong_trong_24h` bằng 1 và `mo_lai_trong_7_ngay` bằng 0, chia tổng số yêu cầu | 82,83% (994/1.200) |
+| Dùng | Tỉ lệ bỏ qua gợi ý | `quyet_dinh_xem_lai` là `sua` hoặc `bo`, chia số yêu cầu được xem lại | 27,12% (48/177) |
+| An toàn | Tỉ lệ lỗi lọt đến khách | `mo_lai_trong_7_ngay` bằng 1, chia tổng số yêu cầu | 4,25% (51/1.200) |
+| Dùng | % yêu cầu của nhóm can thiệp được mở bằng trợ lý | Số yêu cầu có `agent_suggestion_shown` chia số yêu cầu có `arm` là can thiệp | Không cần tính |
+| An toàn | % đơn hoàn sai tiền qua kiểm tra mẫu hằng tuần | Số đơn sai tiền trong `audit_sample_checked` chia số đơn được kiểm tra | Không cần tính |
 
 Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý đã nâng chỉ số": đợt chạy thử không có nhóm đối chứng.
 
@@ -18,16 +18,20 @@ Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý 
 
 | Event | Ai tạo | Thuộc tính chính | Thời điểm |
 | --- | --- | --- | --- |
-| ... | ... | ..., trace_id | ... |
-| ... | ... | ..., trace_id | ... |
-| ... | ... | ..., trace_id | ... |
-| ... | ... | ..., trace_id | ... |
-| ... | ... | ..., trace_id | ... |
-| ... | ... | ..., trace_id | ... |
+| refund_request_created | App khách | request_id, loai, so_tien, arm, trace_id | Khi khách gửi |
+| agent_run_completed | Agent | attempt, tokens_in/out, tool_calls, status, trace_id | Sau mỗi lần chạy, kể cả lỗi |
+| agent_suggestion_shown | Giao diện nhân viên | staff_id, so_tien_de_xuat, trace_id | Khi gợi ý hiện ra |
+| staff_review_decision | Nhân viên | giu/sua/bo, phut_xem_lai, trace_id | Khi bấm gửi/sửa/bỏ |
+| staff_rework_completed | Nhân viên | phut_lam_lai, ly_do, trace_id | Khi làm lại xong |
+| refund_ledger_write | Dịch vụ sổ cái | idempotency_key, so_tien, ket_qua, trace_id | Khi ghi sổ |
+| handoff_to_staff | Agent | reason, tom_tat, trace_id | Khi chuyển nhân viên |
+| ticket_closed | Hệ thống ticket | closed_at, trace_id | Khi đóng |
+| ticket_reopened | Khách | reopened_at, reason, trace_id | Khi mở lại |
+| audit_sample_checked | Kế toán | so_tien_da_hoan, so_tien_dung, trace_id | Hằng tuần |
 
 **Kiểm tra chéo:** với mỗi chỉ số ở bảng E1, ghi event dùng để tính. Chỉ số nào không tính được từ danh sách event thì chưa đo được.
 
-- ...
+- Chỉ số chính: `refund_request_created`, `ticket_closed`, `ticket_reopened`; chỉ số dùng (sửa/bỏ gợi ý): `agent_suggestion_shown`, `staff_review_decision`; chỉ số an toàn (mở lại): `refund_request_created`, `ticket_reopened`. Chỉ số dùng tự đề xuất: `refund_request_created`, `agent_suggestion_shown`; chỉ số an toàn tự đề xuất: `audit_sample_checked`.
 
 ## E2 · Rủi ro kinh tế
 
