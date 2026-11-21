@@ -6,16 +6,16 @@ Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các fil
 
 - Tên nhóm: HC2
 - Lớp: L3A
-- Thành viên hiện tại: Lê Gia Hưng (2A202603706), Đặng Đức Cương (2A202603680). Xem `TEAM.md`.
+- Thành viên: Lê Gia Hưng (2A202603706), Đặng Đức Cương (2A202603680). Xem `TEAM.md`.
 
 ## 2. Mục tiêu và cách tiếp cận
 
-Nhóm đánh giá chi phí trên mỗi yêu cầu hoàn phí thành công, mức sử dụng, loại lỗi và thiết kế pilot có nhóm đối chứng. Dữ liệu của lab là giả lập. Cương phụ trách A–B; Hưng tiếp nhận C/E1 cùng D/E2–E3. Hai bộ nhãn CP3 phải được lập độc lập trước khi so.
+Nhóm đánh giá chi phí trên mỗi yêu cầu hoàn phí thành công, mức sử dụng, loại lỗi và thiết kế pilot có nhóm đối chứng. Dữ liệu của lab là giả lập. Cương phụ trách A–B; Hưng phụ trách C/E1 và D/E2–E3. Hai bộ nhãn CP3 phải được lập độc lập trước khi so.
 
 ## 3. Giải pháp
 
 - A–B: Cương phụ trách `src/lab13.py` (CP1, CP2) và `report/team/bang_chi_phi.md` theo dữ liệu trace.
-- C/E1: Hưng tiếp nhận phần việc này; điền E1, event và kiểm tra chéo trong `chi_so.md`, phụ trách một bộ nhãn CP3 độc lập và tích hợp bảng khắc phục. Bảng nhãn chưa hoàn tất khi chưa có đủ hai bộ được lập riêng.
+- C/E1: Hưng điền E1, event và kiểm tra chéo trong `chi_so.md`, phụ trách một bộ nhãn CP3 độc lập và tích hợp bảng khắc phục. Bảng nhãn chưa hoàn tất khi chưa có đủ hai bộ được lập riêng.
 - D/E2–E3: Hưng phụ trách phần D1 trong `src/lab13.py` (CP4), `pilot_plan.yaml`, risk register và tích hợp `ho_so_launch_v0.md`.
 
 ## 4. Kết quả
@@ -28,7 +28,7 @@ Với 40 nhân viên, cách chia theo cụm không đủ cỡ mẫu để phát 
 
 ## 6. Tổng hợp đóng góp
 
-Cương phụ trách A–B; Hưng tiếp nhận C/E1, phụ trách D/E2–E3, giữ fork và tích hợp. Chi tiết theo file và bằng chứng được ghi trong `TEAM.md` và báo cáo cá nhân.
+Cương phụ trách A–B; Hưng phụ trách C/E1, D/E2–E3, giữ fork và tích hợp. Chi tiết theo file và bằng chứng được ghi trong `TEAM.md` và báo cáo cá nhân.
 
 ## 7. Hạn chế và hướng cải thiện
 
