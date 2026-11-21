@@ -40,4 +40,4 @@ Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý 
 | Rủi ro | Tác động đã tính | Dấu hiệu theo dõi | Hành động | Người phụ trách |
 | --- | --- | --- | --- | --- |
 | Số ca làm lại tăng gấp đôi | Chi phí tăng 51,8%, lên 6.787 đ [simulated] | Tỉ lệ làm lại theo tuần >7% (mẫu trong scope: 4,9% [simulated]) | Thu hẹp scope về noi_dia, rà 20 trace làm lại | PM trợ lý hoàn phí |
-| Phải xem lại 100% kéo dài | 11.743 đ/việc = 0,98x; 12.415 đ = 1,03x nếu làm lại 15,3 phút [simulated] | Tỉ lệ yêu cầu được xem lại >50% cuối bước 0,25 | Giảm xem lại theo bậc khi tỉ lệ sửa+bỏ <15% | Trưởng nhóm CSKH |
+| Phải xem lại 100% kéo dài | 11.743 đ/việc = 0,98×; 12.415 đ = 1,03× nếu làm lại 15,3 phút [simulated] | Tỉ lệ yêu cầu được xem lại >50% cuối bước 0,25 | Giảm xem lại theo bậc khi tỉ lệ sửa+bỏ <15% | Trưởng nhóm CSKH |

@@ -11,7 +11,7 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Đặng Đức Cương | 2A202603680 |  |  | Người viết code, kiêm người kiểm số (A–B) |
+|   1 | Đặng Đức Cương | 2A202603680 |  |  | Người viết code, kiêm người kiểm số (A–B); người gắn nhãn 1 (C) |
 |   2 | Lê Gia Hưng | 2A202603706 |  | Hung-341 | Người gắn nhãn 2, kiêm giữ hồ sơ (C, D, E1–E3) |
 |   3 |        |      |       |        |         |
 |   4 |        |      |       |        |         |
@@ -41,7 +41,7 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Phần việc phụ trách
 
-- Nhiệm vụ C/E1: hoàn thiện E1 trong `report/team/chi_so.md` và tích hợp bảng lỗi trong `report/team/bang_loi.md`.
+- Nhiệm vụ C/E1: hoàn thiện E1 trong `report/team/chi_so.md`; tổng hợp hai bộ nhãn, tỉ lệ đồng thuận và bảng khắc phục trong `report/team/bang_loi.md`.
 - Nhiệm vụ D: tính cỡ mẫu, chọn cách chia pilot và hoàn thiện `report/team/pilot_plan.yaml`.
 - Nhiệm vụ E2–E3: điền risk register và các phần hồ sơ được giao trong `report/team/chi_so.md` và `report/team/ho_so_launch_v0.md`.
 - Người gắn nhãn 2 ở CP3: gắn nhãn 20 ca độc lập trước khi so với bộ nhãn còn lại.
@@ -50,18 +50,20 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - Viết phần CP4 trong `src/lab13.py` tính năm trường hợp cỡ mẫu D1, power 0,64 và tỉ lệ mở lại; ghi đánh đổi khi chọn MDE 6 điểm và trả lời năm câu D2.
 - Tính E1 trên 1.200 yêu cầu: chỉ số chính 82,83% (994/1.200), tỉ lệ sửa/bỏ gợi ý 27,12% (48/177), tỉ lệ mở lại 4,25% (51/1.200); lập danh sách event và kiểm tra chéo event với chỉ số.
+- Gắn bộ nhãn 2 cho 20 ca; so với bộ nhãn 1, đạt đồng thuận 18/20 = 90%; viết quy tắc cho ca 13, 18 và bảng khắc phục năm loại.
 - Đề xuất ba luật dừng cho an toàn, chi phí và mức sử dụng; ghi rollback và ngày quyết định.
-- Điền hai rủi ro kinh tế theo bảng độ nhạy B1; tích hợp số A–B, pilot và rủi ro vào hồ sơ launch.
+- Điền hai rủi ro kinh tế theo bảng độ nhạy B1; tích hợp số A–C, pilot và rủi ro vào hồ sơ launch.
 
 ### Bằng chứng
 
-- Phần CP4 trong `src/lab13.py`; `report/team/pilot_plan.yaml`: D1/D2 và ba stop rule; phần E2 trong `report/team/chi_so.md`; mục 1–3, 6–7 và đề xuất trong `report/team/ho_so_launch_v0.md`.
+- Phần CP4 trong `src/lab13.py`; `report/team/pilot_plan.yaml`: D1/D2 và ba stop rule; `report/team/bang_loi.md`; E1 và E2 trong `report/team/chi_so.md`; bảy mục và đề xuất trong `report/team/ho_so_launch_v0.md`.
 
 ## DangDucCuong-2A202603680
 
 ### Phần việc phụ trách
 
 - Code và kinh tế: nhiệm vụ A (CP1) và B (CP2) trong `src/lab13.py`; phần A–B của `report/team/bang_chi_phi.md`.
+- Người gắn nhãn 1 ở CP3: gắn nhãn 20 ca độc lập trước khi so với bộ nhãn 2.
 
 ### Đóng góp cụ thể
 

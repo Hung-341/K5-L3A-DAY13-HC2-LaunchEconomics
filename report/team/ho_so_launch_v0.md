@@ -10,7 +10,7 @@ Nhóm: HC2 · Lớp: L3A
 | 2 · Ba yếu tố nhạy nhất | Số ca làm lại ×2: +51,8%; tỉ lệ xem lại ×2: +40,7%; lương +25%: +23,1%; giá token ×2 chỉ +5,6% [simulated] | Giả lập | Kỹ sư trưởng agent |
 | 3 · So với nhân viên tự làm | Phạm vi pilot: 4.599 đ = 0,38× của 12.000 đ (0,48× ở nửa khối lượng); quoc_te 1,88× và doi_tac 0,85× nên bị loại khỏi phạm vi [simulated] | Giả lập | Giám đốc vận hành LogiX-VN |
 | 4 · Chỉ số chính, chỉ số dùng, chỉ số an toàn | Trong đợt chạy thử: đóng trong 24 giờ và không mở lại 82,83% (994/1.200); sửa/bỏ gợi ý 27,12% (48/177); mở lại 4,25% (51/1.200) | Xong, có bằng chứng | Trưởng nhóm CSKH |
-| 5 · Bảng lỗi và cách khắc phục | Chưa có đủ hai bộ nhãn được lập độc lập và tỉ lệ đồng thuận trong `bang_loi.md` | Chưa | Kỹ sư trưởng agent |
+| 5 · Bảng lỗi và cách khắc phục | Hai bộ nhãn độc lập đồng thuận 18/20 = 90%; ca 13 và 18 đã thống nhất; bảng khắc phục đủ năm loại (ca 1, 20, 16, 19, 5) | Xong, có bằng chứng | Kỹ sư trưởng agent |
 | 6 · Pilot plan | 20 nhân viên/nhánh; MDE 6 điểm; 859 yêu cầu/nhánh; DE 6,96; power khoảng 0,64 nếu tác động thật là 5 điểm; mở lại hiện tại 4,25% | Xong, có bằng chứng | Giám đốc vận hành LogiX-VN |
 | 7 · Rủi ro kinh tế | Làm lại ×2: 6.787 đ/việc (+51,8%); review 100%: 11.743 đ/việc [simulated] | Giả lập | PM trợ lý hoàn phí |
 
