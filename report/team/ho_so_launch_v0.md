@@ -2,7 +2,7 @@
 
 Một trang. Cột trạng thái chỉ nhận: **Xong, có bằng chứng · Chưa · Giả lập**. Mục nào dựa trên cột `_simulated` ghi Giả lập. Người phụ trách là một vai trò, không ghi "cả đội". Gate 2a chỉ duyệt kế hoạch pilot: không viết như thể trợ lý đã được duyệt chạy chính thức (xem quy tắc 5 trong `README.md`).
 
-Nhóm: ... · Lớp: ...
+Nhóm: HC2 · Lớp: L3A
 
 | Mục | Con số chính | Trạng thái | Người phụ trách |
 | --- | --- | --- | --- |
@@ -11,9 +11,7 @@ Nhóm: ... · Lớp: ...
 | 3 · So với nhân viên tự làm | ... | ... | ... |
 | 4 · Chỉ số chính, chỉ số dùng, chỉ số an toàn | ... | ... | ... |
 | 5 · Bảng lỗi và cách khắc phục | ... | ... | ... |
-| 6 · Pilot plan | ... | ... | ... |
-| 7 · Rủi ro kinh tế | ... | ... | ... |
+| 6 · Pilot plan | 20 nhân viên/nhánh; MDE 6 điểm; 859 yêu cầu hiệu dụng/nhánh; DE 6,96; power khoảng 0,64 nếu tác động thật là 5 điểm [simulated] | Giả lập | Giám đốc vận hành LogiX-VN |
+| 7 · Rủi ro kinh tế | Làm lại ×2: 6.787 đ/việc (+51,8%); review 100%: 11.743 đ/việc [simulated] | Giả lập | PM trợ lý hoàn phí |
 
-**Đề xuất:** Go · Go có điều kiện · No-go (giữ một). Go có điều kiện: ghi từng điều kiện, người phụ trách, ngày kiểm tra. No-go: ghi việc phải làm để quay lại cổng.
-
-- ...
+**Đề xuất: Go có điều kiện.** Trước 2027-01-05, Kỹ sư trưởng agent sửa khoá chống trùng và đối soát sổ cái; Giám đốc vận hành chấp nhận MDE 6 điểm (power khoảng 0,64 nếu tác động thật là 5 điểm); PM bật event có `trace_id` và thay phút simulated bằng số đo thật sau tuần 1; Trưởng nhóm CSKH giảm xem lại theo bậc vì xem lại 100% tốn 11.743 đ/việc [simulated].
