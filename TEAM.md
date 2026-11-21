@@ -11,8 +11,8 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Nguyễn Trần Anh Khôi | 2A202603422 |  |  | Người viết code, kiêm người kiểm số (A–B) |
-|   2 | Đặng Đức Cương | 2A202603680 |  |  | Người gắn nhãn 1 (C), phụ trách E1 |
+|   1 | Đặng Đức Cương | 2A202603680 |  |  | Người viết code, kiêm người kiểm số (A–B) |
+|   2 | Nguyễn Trần Anh Khôi | 2A202603422 |  |  | Người gắn nhãn 1 (C), phụ trách E1 |
 |   3 | Lê Gia Hưng | 2A202603706 |  | Hung-341 | Người gắn nhãn 2, kiêm giữ hồ sơ (C, D, E2–E3) |
 |   4 |        |      |       |        |         |
 
@@ -54,3 +54,21 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Bằng chứng
 
 - `report/team/pilot_plan.yaml`: D1/D2 và ba stop rule; phần E2 trong `report/team/chi_so.md`; mục 6–7 và đề xuất trong `report/team/ho_so_launch_v0.md`.
+
+## DangDucCuong-2A202603680
+
+### Phần việc phụ trách
+
+- Code và kinh tế: nhiệm vụ A (CP1) và B (CP2) trong `src/lab13.py`; phần A–B của `report/team/bang_chi_phi.md`.
+
+### Đóng góp cụ thể
+
+- Viết ba hàm A1 (ba phép thử ĐẠT 1,20 · 1,25 · 1,25) và `mo_hinh(...)` có tham số giá, lương, hệ số xem lại/làm lại, `max_lan_chay`.
+- Tính A2, A3 (theo `loai` + tỉ lệ ok theo `attempt`), A4 (cố định 40 triệu/tháng, phạm vi `noi_dia + hang_nang`), B1 (9 kịch bản), B2, B3, B4.
+- Bàn giao cho người giữ hồ sơ: cps 4.472 đ [simulated]; phạm vi pilot `noi_dia + hang_nang` 3.414 đ, + cố định = 4.599 đ (0,38×) [simulated]; ba yếu tố nhạy nhất: số ca làm lại, tỉ lệ xem lại, lương; giới hạn 2 lượt chạy rẻ nhất cho cả hệ thống; xem lại 100% = 0,98×–1,03× [simulated].
+- Giả định: chi phí cả hệ thống cộng 12.000 đ cho mỗi yêu cầu không thành công; A4 giữ tỉ lệ 900/1.200 việc thành công ở quy mô 45.000 yêu cầu/tháng; B4 dùng 5 phút xem lại, 9 phút làm lại (thêm kịch bản 15,3 phút).
+
+### Bằng chứng
+
+- `src/lab13.py`, `report/team/bang_chi_phi.md`, báo cáo cá nhân `report/team/2A202603680_DangDucCuong.md`.
+- Số đối chiếu khớp hướng dẫn chi tiết (lệch dưới 2%): 978 việc thành công, tổng 4.373.585 đ, 4.472 đ/việc thành công [simulated].
